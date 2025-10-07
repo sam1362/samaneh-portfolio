@@ -12,7 +12,7 @@ const fraunces = Fraunces({
 const ValidationSection: React.FC = () => {
   return (
     <section className="bg-white text-[#1A1A1A] py-20 px-6 md:px-20">
-      {/* ===== عنوان ===== */}
+      {/* title */}
       <div className="max-w-4xl mx-auto mb-12">
         <div className="flex items-center gap-2 mb-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
@@ -36,7 +36,7 @@ Interviews with 20+ participants revealed the AR Alone Doesn’t Close
         </p>
       </div>
 
-      {/* ===== نقل قول بولد وسط ===== */}
+      {/* subrtitle */}
       <div className="max-w-3xl mx-auto text-center my-16">
         <p className="text-lg md:text-xl font-medium leading-relaxed">
           We discovered that users often lacked confidence when choosing art,
@@ -45,7 +45,7 @@ Interviews with 20+ participants revealed the AR Alone Doesn’t Close
         </p>
       </div>
 
-      {/* ===== تصویر چت ===== */}
+      {/* chatImage */}
       <div className="max-w-5xl mx-auto">
         <Image
           src="/images/chat.png"

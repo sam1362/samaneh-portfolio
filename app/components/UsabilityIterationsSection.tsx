@@ -12,7 +12,7 @@ const fraunces = Fraunces({
 const UsabilityIterationsSection: React.FC = () => {
   return (
     <section className="bg-white text-[#1A1A1A] py-20 px-6 md:px-20 space-y-16">
-      {/* ===== عنوان ===== */}
+      {/*  title  */}
     
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-2 mb-4">
@@ -36,7 +36,7 @@ const UsabilityIterationsSection: React.FC = () => {
         </p>
       </div>
 
-      {/* ===== زیرعنوان و توضیحات ===== */}
+      {/*  subtileAndDescribe*/}
       <div className="max-w-4xl mx-auto">
       <h2
             className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
@@ -51,7 +51,7 @@ const UsabilityIterationsSection: React.FC = () => {
         </p>
       </div>
 
-      {/* ===== تصویر ===== */}
+      {/* image */}
       <div className="max-w-5xl mx-auto mt-10">
         <Image
           src="/images/firstuse.png"
@@ -61,7 +61,7 @@ const UsabilityIterationsSection: React.FC = () => {
           className="rounded-xl object-contain mx-auto"
         />
       </div>
-       {/* ===== زیرعنوان و توضیحات ===== */}
+       {/*  subtileAndDescribe  */}
        <div className="max-w-4xl mx-auto">
       <h2
             className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
@@ -75,7 +75,7 @@ const UsabilityIterationsSection: React.FC = () => {
         </p>
       </div>
 
-      {/* ===== تصویر ===== */}
+      {/*  image  */}
       <div className="max-w-5xl mx-auto mt-10">
         <Image
           src="/images/upload.png"
@@ -85,7 +85,7 @@ const UsabilityIterationsSection: React.FC = () => {
           className="rounded-xl object-contain mx-auto"
         />
       </div>
-        {/* ===== زیرعنوان و توضیحات ===== */}
+        {/*  subtileAndDescribe  */}
         <div className="max-w-4xl mx-auto">
       <h2
             className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
@@ -98,7 +98,7 @@ const UsabilityIterationsSection: React.FC = () => {
         </p>
       </div>
 
-      {/* ===== تصویر ===== */}
+      {/* image */}
       <div className="max-w-5xl mx-auto mt-10">
         <Image
           src="/images/gallery.png"
@@ -108,7 +108,7 @@ const UsabilityIterationsSection: React.FC = () => {
           className="rounded-xl object-contain mx-auto"
         />
       </div>
-        {/* ===== زیرعنوان و توضیحات ===== */}
+        {/* subtileAndDescribe */}
         <div className="max-w-4xl mx-auto">
       <h2
             className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
@@ -121,7 +121,7 @@ Web App Iteration: Needs to be Visually Appealing     </h2>
         </p>
       </div>
 
-      {/* ===== تصویر ===== */}
+      {/*  image */}
       <div className="max-w-5xl mx-auto mt-10">
         <Image
           src="/images/app1.png"
@@ -131,7 +131,7 @@ Web App Iteration: Needs to be Visually Appealing     </h2>
           className="rounded-xl object-contain mx-auto"
         />
       </div>
- {/* ===== عنوان ===== */}
+ {/* subtileAndDescribe */}
     
  <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-2 mb-4">

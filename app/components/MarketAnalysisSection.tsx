@@ -11,11 +11,11 @@ const fraunces = Fraunces({
 
 const MarketAnalysisSection: React.FC = () => {
   return (
-    // کل سکشن سفید می‌مونه
+   
     <section className="bg-white text-[#1A1A1A] py-20 px-6 md:px-0">
-      {/* باکس وسطی با پس‌زمینه‌ی توسی روشن */}
+  
       <div className="bg-[#F2F0EA] py-16 px-6 md:px-20 max-w-6xl mx-auto rounded-2xl shadow-sm">
-        {/* ===== عنوان بخش ===== */}
+        {/* title */}
         <div className="max-w-4xl mx-auto mb-10">
           <div className="flex items-center gap-2 mb-4">
           <h2 className="text-2xl font-semibold mb-4 flex items-center">
@@ -39,7 +39,7 @@ const MarketAnalysisSection: React.FC = () => {
           </p>
         </div>
 
-        {/* ===== تصویر لوگوها ===== */}
+        {/* logoImage */}
         <div className="max-w-5xl mx-auto flex justify-center mb-12">
           <Image
             src="/images/Logo.png"
@@ -50,7 +50,7 @@ const MarketAnalysisSection: React.FC = () => {
           />
         </div>
 
-        {/* ===== تصویر تحلیل ===== */}
+        {/* analysisImage */}
         <div className="max-w-5xl mx-auto mb-10">
           <Image
             src="/images/analysis.png"

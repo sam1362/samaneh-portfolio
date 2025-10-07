@@ -27,12 +27,11 @@ const fraunces = Fraunces({
 export default function ArtellaPage() {
   return (
     <main className="bg-white text-[#1A1A1A] min-h-screen flex flex-col">
-      {/* ===== نوار بالا ===== */}
+     
       <NavigationBar />
 
-      {/* ===== محتوای پروژه ===== */}
       <section className="flex-grow px-6 md:px-16 py-20 max-w-5xl mx-auto space-y-20">
-        {/* بخش معرفی */}
+        {/*  intro */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +51,7 @@ export default function ArtellaPage() {
           />
         </motion.section>
 
-        {/* بخش مقدمه */}
+        {/* introPart */}
         <section>
           <h2 className="text-2xl font-semibold mb-4 flex items-center">
             <span className="text-xl mr-2">🔶</span> Introduction
@@ -66,7 +65,7 @@ export default function ArtellaPage() {
           </p>
         </section>
 
-        {/* بخش نقش من */}
+        {/* role */}
         <section className="grid md:grid-cols-2 gap-10">
           <div>
             <h2 className="text-2xl font-semibold mb-4">My Role</h2>
@@ -101,7 +100,7 @@ export default function ArtellaPage() {
           className="mx-auto rounded-xl"
         />
 
-        {/* بخش Problem Discovery */}
+        {/* problemDiscovery */}
         <section>
           <h2 className="text-2xl font-semibold mb-4 flex items-center">
             <span className="text-xl mr-2">🔶</span> Problem Discovery
@@ -190,23 +189,27 @@ export default function ArtellaPage() {
         </div>
       </section>
      
-       {/* ✅ سکشن The Process */}
+       {/* Process */}
        <ProcessSection />
       </section>
-   {/* ===== Market Analysis Section ===== */}
+   {/* marketAnalysisSection */}
 <MarketAnalysisSection />
-{/* ===== Validation Section ===== */}
+{/* validationSection */}
 <ValidationSection />
 
-{/* ===== Pain Points Section ===== */}
+{/*  painPointsSection */}
 <PainPointsSection />
-{/* ===== Persona Section ===== */}
+
+{/*  personaSection  */}
 <PersonaSection />
-{/* ===== Solution & Architecture Section ===== */}
+
+{/*  solutionAndArchitectureSection  */}
 <SolutionArchitectureSection />
-{/* ===== Usability Iterations Section ===== */}
+
+{/*  usabilityIterationsSection  */}
 <UsabilityIterationsSection />
-      {/* ===== فوتر ===== */}
+
+      {/*  footer  */}
       <Footer />
     </main>
   );

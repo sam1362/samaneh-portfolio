@@ -6,7 +6,7 @@ type ButtonProps = {
   text: string;
   href?: string;
   onClick?: () => void;
-  variant?: "primary" | "outline"; // نوع دکمه
+  variant?: "primary" | "outline"; // typeButton
   newTab?: boolean;
 };
 

@@ -15,7 +15,7 @@ export default function Hero() {
         darkMode ? "bg-[#0B0B0B] text-[#F7F7F5]" : "bg-[#FAFAFA] text-[#1A1A1A]"
       }`}
     >
-      {/* بخش چپ - متن */}
+      {/* leftPartText */}
       <div className="flex-1 flex flex-col items-start justify-center text-left space-y-6">
       <motion.div
           initial={{ opacity: 0, y: 20, rotate: -5 }}
@@ -54,7 +54,7 @@ export default function Hero() {
 
       </div>
 
-      {/* بخش راست - تصویر */}
+      {/* rightPartImage */}
       <motion.div
         initial={{ opacity: 0, x: 60 }}
         animate={{ opacity: 1, x: 0 }}

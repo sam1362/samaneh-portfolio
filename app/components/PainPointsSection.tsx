@@ -6,7 +6,7 @@ import React from "react";
 const PainPointsSection: React.FC = () => {
   return (
     <section className="bg-white text-[#1A1A1A] py-20 px-6 md:px-20">
-      {/* ===== عنوان ===== */}
+      {/* title */}
       <div className="max-w-4xl mx-auto mb-12">
         <div className="flex items-center gap-2 mb-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
@@ -29,7 +29,7 @@ const PainPointsSection: React.FC = () => {
         </p>
       </div>
 
-      {/* ===== تصویر کلی Pain Points ===== */}
+      {/* imagePainPoint */}
       <div className="max-w-5xl mx-auto mt-16">
         <Image
           src="/images/painpoint.png"

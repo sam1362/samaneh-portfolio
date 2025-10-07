@@ -12,7 +12,7 @@ const fraunces = Fraunces({
 const SolutionArchitectureSection: React.FC = () => {
   return (
     <section className="bg-white text-[#1A1A1A] py-20 px-6 md:px-20 space-y-24">
-      {/* ===== Approaching a Solution ===== */}
+      {/* Approaching a Solution  */}
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-2 mb-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
@@ -37,7 +37,7 @@ const SolutionArchitectureSection: React.FC = () => {
     
       </div>
 
-      {/* ===== System Architecture ===== */}
+      {/*  System Architecture  */}
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-2 mb-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
@@ -56,7 +56,7 @@ const SolutionArchitectureSection: React.FC = () => {
         </p>
       </div>
 
-      {/* ===== تصویر Flow ===== */}
+      {/*  imageFlow  */}
       <div className="max-w-5xl mx-auto mt-12">
         <Image
           src="/images/flow.png"

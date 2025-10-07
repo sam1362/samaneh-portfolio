@@ -12,7 +12,7 @@ const fraunces = Fraunces({
 const PersonaSection: React.FC = () => {
   return (
     <section className="bg-white text-[#1A1A1A] py-20 px-6 md:px-20 space-y-20">
-      {/* ===== Defining Persona & Goals ===== */}
+      {/*  Defining Persona & Goals  */}
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-2 mb-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
