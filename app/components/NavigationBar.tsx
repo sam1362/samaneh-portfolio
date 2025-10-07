@@ -8,7 +8,7 @@ export default function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#FAFAFA]/90 backdrop-blur-md  py-5 px-6 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#FAFAFA]/90 backdrop-blur-md py-5 px-6 flex items-center justify-between">
       {/* logo */}
       <Link
         href="/"
@@ -17,7 +17,7 @@ export default function NavigationBar() {
         Samaneh
       </Link>
 
-      {/* hambergurButton*/}
+      {/* hamburger button */}
       <button
         onClick={() => setMenuOpen(true)}
         className="flex flex-col space-y-1.5 md:hidden focus:outline-none"
@@ -27,7 +27,7 @@ export default function NavigationBar() {
         <span className="h-0.5 w-6 bg-gray-800 transition-all"></span>
       </button>
 
-      {/* menuDesktop */}
+      {/* desktop menu */}
       <div className="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-800">
         <Link href="/work" className="hover:text-[#00636b] transition-colors">
           Work
@@ -40,7 +40,7 @@ export default function NavigationBar() {
         </Link>
       </div>
 
-      {/* mobileMenu */}
+      {/* mobile menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -48,9 +48,9 @@ export default function NavigationBar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="fixed top-0 right-0 w-full h-screen bg-[#FAFAFA] z-50 flex flex-col items-center justify-center space-y-10 text-3xl font-semibold text-gray-800"
+            className="fixed top-0 right-0 w-full h-screen bg-[#FAFAFA] z-50 flex flex-col items-end justify-start pt-24 pr-10 space-y-6 text-2xl font-semibold text-gray-800"
           >
-            {/* closeButton */}
+            {/* close button */}
             <button
               onClick={() => setMenuOpen(false)}
               className="absolute top-6 right-6 text-3xl text-gray-800 hover:text-[#00636b] transition"
