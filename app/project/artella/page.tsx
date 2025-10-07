@@ -130,6 +130,34 @@ export default function ArtellaPage() {
           height={700}
           className="mx-auto rounded-xl"
         />
+         <section className="max-w-6xl mx-auto px-6 md:px-16 py-20 grid md:grid-cols-2 gap-16 items-center">
+        <div className="space-y-6">
+          <div className="flex items-center mb-4">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center">
+              <span className="text-xl mr-2">🔶</span> Our Solution - AI / AR
+            </h2>
+          </div>
+          <h2
+            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+          >
+            An AI-powered, personalized, and immersive art-buying experience.
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Discover, preview, and select the perfect artwork with confidence
+            using AR and smart recommendations.
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center w-full">
+          <video
+            src="/videos/ArtMatchTool.mov"
+            controls
+            muted
+            loop
+            className="rounded-[30px] w-full max-w-[200px] h-[400px] object-contain"
+          />
+        </div>
+      </section>
 
       <section className="max-w-6xl mx-auto px-6 md:px-16 py-20 text-center space-y-10">
         <div className="flex items-center mb-4">
@@ -161,34 +189,7 @@ export default function ArtellaPage() {
           />
         </div>
       </section>
-      <section className="max-w-6xl mx-auto px-6 md:px-16 py-20 grid md:grid-cols-2 gap-16 items-center">
-        <div className="space-y-6">
-          <div className="flex items-center mb-4">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-              <span className="text-xl mr-2">🔶</span> Our Solution - AI / AR
-            </h2>
-          </div>
-          <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
-          >
-            An AI-powered, personalized, and immersive art-buying experience.
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Discover, preview, and select the perfect artwork with confidence
-            using AR and smart recommendations.
-          </p>
-        </div>
-
-        <div className="flex justify-center items-center w-full">
-          <video
-            src="/videos/ArtMatchTool.mov"
-            controls
-            muted
-            loop
-            className="rounded-[30px] w-full max-w-[200px] h-[400px] object-contain"
-          />
-        </div>
-      </section>
+     
        {/* ✅ سکشن The Process */}
        <ProcessSection />
       </section>
