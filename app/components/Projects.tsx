@@ -35,7 +35,7 @@ export default function Projects() {
                   alt={project.title}
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.4 }}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
 

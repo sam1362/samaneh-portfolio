@@ -33,7 +33,7 @@ export const projects = [
     id: 4,
     title: "Ticket Model for Transportation",
     year: "2023",
-    tags: ["Public Transport", "UX Research", "UI"],
+    tags: ["Public Transport", "UX Research", "Sustainability"],
     description:
       "Developed an inclusive ticketing system concept for students, improving usability and clarity in digital public transport systems.",
     image: "/images/Transport.png",
