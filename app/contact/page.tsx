@@ -2,12 +2,13 @@
 import { useState } from "react";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
-import { motion } from "framer-motion";
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -24,17 +25,14 @@ export default function ContactPage() {
 
       {/* Contact Section */}
       <section className="flex-grow flex flex-col items-center justify-center px-6 md:px-16 py-20">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-bold mb-6 text-center"
-        >
-          Get in Touch
-        </motion.h1>
+        <h1 className="text-4xl font-bold mb-6 text-center">Get in Touch</h1>
 
         <p className="text-gray-600 mb-12 text-center max-w-lg">
-        I'd love to hear from you! Fill out the form below or send an email to smr82computer@gmail.com, and I’ll get back to you as soon as possible.
+          I'd love to hear from you! Fill out the form below or send an email to{" "}
+          <span className="text-[#00636b] font-medium">
+            smr82computer@gmail.com
+          </span>
+          , and I’ll get back to you as soon as possible.
         </p>
 
         <form
@@ -43,7 +41,9 @@ export default function ContactPage() {
         >
           {/* Name */}
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-700">Name</label>
+            <label className="block mb-2 text-sm font-medium text-gray-700">
+              Name
+            </label>
             <input
               type="text"
               name="name"
@@ -57,7 +57,9 @@ export default function ContactPage() {
 
           {/* Email */}
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-700">Email</label>
+            <label className="block mb-2 text-sm font-medium text-gray-700">
+              Email
+            </label>
             <input
               type="email"
               name="email"
@@ -71,7 +73,9 @@ export default function ContactPage() {
 
           {/* Message */}
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-700">Message</label>
+            <label className="block mb-2 text-sm font-medium text-gray-700">
+              Message
+            </label>
             <textarea
               name="message"
               value={form.message}
@@ -84,14 +88,12 @@ export default function ContactPage() {
           </div>
 
           {/* Button */}
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <button
             type="submit"
-            className="w-full py-3 bg-[#00636b] text-white font-semibold rounded-full transition-colors hover:bg-[#004f56]"
+            className="w-full py-3 bg-[#00636b] text-white font-semibold rounded-full transition-transform duration-200 hover:scale-105 active:scale-95 hover:bg-[#004f56]"
           >
             Send Message
-          </motion.button>
+          </button>
         </form>
       </section>
 
