@@ -9,6 +9,7 @@ import PainPointsSection from "@/app/components/PainPointsSection";
 import PersonaSection from "@/app/components/PersonaSection";
 import SolutionArchitectureSection from "@/app/components/SolutionArchitectureSection";
 import UsabilityIterationsSection from "@/app/components/UsabilityIterationsSection";
+import MoreProjects from "@/app/components/MoreProjects";
 
 export default function ArtellaPage() {
   return (
@@ -142,38 +143,44 @@ export default function ArtellaPage() {
             </h2>
           </div>
 
-          <h1 className="font-fraunces text-[40px] md:text-[46px] font-normal text-[#1A1A1A] leading-snug max-w-4xl text-left">
+          <h1 className="font-fraunces text-[40px] md:text-[46px] font-normal text-[#1A1A1A] border-none leading-snug max-w-4xl text-left">
             Upload your space, and preview before you buy.
           </h1>
 
           <div className="flex justify-center mt-12">
-            <video
-              src="/videos/DesktopMock.mov"
-              controls
-              muted
-              loop
-              playsInline
-              className="w-full max-w-[900px] object-contain border-none outline-none overflow-hidden"
-              style={{
-                border: "none",
-                outline: "none",
-                background: "transparent",
-              }}
-            />
-          </div>
+  <video
+    src="/videos/DesktopMock.mov"
+    controls
+    muted
+    loop
+    playsInline
+    className="w-full max-w-[900px] h-auto object-contain border-none outline-none shadow-none"
+    style={{
+      border: "none",
+      outline: "none",
+      boxShadow: "none",
+      background: "transparent",
+    }}
+  />
+</div>
         </section>
-
-        {/* Process */}
-        <ProcessSection />
-      </section>
-
-      {/* Remaining sections */}
+<div>
+     {/* Process */}
+     <ProcessSection />
+         {/* Remaining sections */}
       <MarketAnalysisSection />
       <ValidationSection />
       <PainPointsSection />
       <PersonaSection />
       <SolutionArchitectureSection />
       <UsabilityIterationsSection />
+      <MoreProjects current="/project/artella" />
+</div>
+     
+      </section>
+
+     
+
     </main>
   );
 }

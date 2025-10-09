@@ -4,7 +4,7 @@ import Projects from "../components/Projects";
 
 export default function WorkPage() {
   return (
-    <main className="bg-[#FAFAFA] text-[#1A1A1A] min-h-screen px-6 md:px-16 py-20">
+    <main className="bg-white text-[#1A1A1A] min-h-screen px-6 md:px-16 py-20">
       <section className="max-w-6xl mx-auto">
       
 
