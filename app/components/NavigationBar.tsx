@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 export default function NavigationBar() {
@@ -18,14 +17,16 @@ export default function NavigationBar() {
       </Link>
 
       {/* hamburger button */}
-      <button
-        onClick={() => setMenuOpen(true)}
-        className="flex flex-col space-y-1.5 md:hidden focus:outline-none"
-      >
-        <span className="h-0.5 w-6 bg-gray-800 transition-all"></span>
-        <span className="h-0.5 w-6 bg-gray-800 transition-all"></span>
-        <span className="h-0.5 w-6 bg-gray-800 transition-all"></span>
-      </button>
+      {!menuOpen && (
+        <button
+          onClick={() => setMenuOpen(true)}
+          className="flex flex-col space-y-1.5 md:hidden focus:outline-none"
+        >
+          <span className="h-0.5 w-6 bg-gray-800 transition-all"></span>
+          <span className="h-0.5 w-6 bg-gray-800 transition-all"></span>
+          <span className="h-0.5 w-6 bg-gray-800 transition-all"></span>
+        </button>
+      )}
 
       {/* desktop menu */}
       <div className="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-800">
@@ -41,54 +42,49 @@ export default function NavigationBar() {
       </div>
 
       {/* mobile menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="fixed top-0 right-0 w-full h-screen bg-[#FAFAFA] z-50 flex flex-col items-end justify-start pt-24 pr-10 space-y-6 text-2xl font-semibold text-gray-800"
+      {menuOpen && (
+        <div className="fixed top-0 right-0 w-full h-screen bg-[#FAFAFA] z-50 flex flex-col items-end justify-start pt-24 pr-10 space-y-6 text-2xl font-semibold text-gray-800">
+          {/* close button with rotated lines */}
+          <button
+            onClick={() => setMenuOpen(false)}
+            className="absolute top-6 right-6 w-6 h-6 flex items-center justify-center focus:outline-none"
           >
-            {/* close button */}
-            <button
-              onClick={() => setMenuOpen(false)}
-              className="absolute top-6 right-6 text-3xl text-gray-800 hover:text-[#00636b] transition"
-            >
-              ×
-            </button>
+            <div className="relative w-6 h-6">
+              <span className="absolute top-1/2 left-0 w-full h-[2px] bg-gray-800 rounded-sm rotate-45 -translate-y-1/2"></span>
+              <span className="absolute top-1/2 left-0 w-full h-[2px] bg-gray-800 rounded-sm -rotate-45 -translate-y-1/2"></span>
+            </div>
+          </button>
 
-            <Link
-              href="/"
-              className="hover:text-[#00636b] transition"
-              onClick={() => setMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/work"
-              className="hover:text-[#00636b] transition"
-              onClick={() => setMenuOpen(false)}
-            >
-              Work
-            </Link>
-            <Link
-              href="/about"
-              className="hover:text-[#00636b] transition"
-              onClick={() => setMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:text-[#00636b] transition"
-              onClick={() => setMenuOpen(false)}
-            >
-              Contact
-            </Link>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          <Link
+            href="/"
+            className="hover:text-[#00636b] transition"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            href="/work"
+            className="hover:text-[#00636b] transition"
+            onClick={() => setMenuOpen(false)}
+          >
+            Work
+          </Link>
+          <Link
+            href="/about"
+            className="hover:text-[#00636b] transition"
+            onClick={() => setMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-[#00636b] transition"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }

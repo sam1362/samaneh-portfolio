@@ -2,12 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fraunces } from "next/font/google";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const ValidationSection: React.FC = () => {
   return (
@@ -22,8 +16,8 @@ const ValidationSection: React.FC = () => {
         </div>
 
         <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
-          >
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug">
+        
 Interviews with 20+ participants revealed the AR Alone Doesn’t Close
           the Deal in buying Art Online. 
   </h2>

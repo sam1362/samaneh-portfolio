@@ -1,10 +1,4 @@
 import React from "react";
-import { Fraunces } from "next/font/google";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const ProcessSection: React.FC = () => {
   return (
@@ -29,7 +23,7 @@ const ProcessSection: React.FC = () => {
 
         {/* Main Highlighted Text */}
         <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className=" font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
  AI personalization and AR previews help simplify choices, making art buying online more confident and enjoyable.         
   </h2>

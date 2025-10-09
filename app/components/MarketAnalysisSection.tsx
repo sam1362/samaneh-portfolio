@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fraunces } from "next/font/google";
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const MarketAnalysisSection: React.FC = () => {
   return (
@@ -24,8 +19,8 @@ const MarketAnalysisSection: React.FC = () => {
            
           </div>
           <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
-          >
+            className= "font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug">
+    
  Most competitors rely on generic listings, with few offering AI-driven personalization or AR previews.    
   </h2>
          

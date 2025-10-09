@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import NavigationBar from "@/app/components/NavigationBar";
-import Footer from "@/app/components/Footer";
-import { Fraunces } from "next/font/google";
 import React from "react";
 import ProcessSection from "@/app/components/ProcessSection";
 import MarketAnalysisSection from "@/app/components/MarketAnalysisSection";
@@ -17,18 +14,10 @@ import UsabilityIterationsSection from "@/app/components/UsabilityIterationsSect
 
 
 
-
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 export default function ArtellaPage() {
   return (
     <main className="bg-white text-[#1A1A1A] min-h-screen flex flex-col">
      
-      <NavigationBar />
 
       <section className="flex-grow px-6 md:px-16 py-20 max-w-5xl mx-auto space-y-20">
         {/*  intro */}
@@ -106,8 +95,7 @@ export default function ArtellaPage() {
             <span className="text-xl mr-2">🔶</span> Problem Discovery
           </h2>
           <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
-          >
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug">
             People Find It Hard to See If Art Truly Fits Their Space.
           </h2>
           <p className="text-gray-600 leading-relaxed mb-8">
@@ -137,8 +125,7 @@ export default function ArtellaPage() {
             </h2>
           </div>
           <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
-          >
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug">
             An AI-powered, personalized, and immersive art-buying experience.
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -167,7 +154,7 @@ export default function ArtellaPage() {
         </div>
 
         <h1
-          className={`${fraunces.className} text-[40px] md:text-[46px] font-normal text-[#1A1A1A] leading-snug max-w-4xl text-left`}
+          className="font-fraunces text-[40px] md:text-[46px] font-normal text-[#1A1A1A] leading-snug max-w-4xl text-left"
         >
           Upload your space, and preview before you buy.
         </h1>
@@ -209,8 +196,7 @@ export default function ArtellaPage() {
 {/*  usabilityIterationsSection  */}
 <UsabilityIterationsSection />
 
-      {/*  footer  */}
-      <Footer />
+ 
     </main>
   );
 }

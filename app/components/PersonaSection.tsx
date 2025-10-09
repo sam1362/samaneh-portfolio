@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fraunces } from "next/font/google";
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const PersonaSection: React.FC = () => {
   return (
@@ -20,7 +15,7 @@ const PersonaSection: React.FC = () => {
           </h2>
         </div>
         <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className= "font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
   Consolidating our key insights into a goal-oriented persona.
   </h2>

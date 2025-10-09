@@ -2,12 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fraunces } from "next/font/google";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const UsabilityIterationsSection: React.FC = () => {
   return (
@@ -22,7 +16,7 @@ const UsabilityIterationsSection: React.FC = () => {
           
         </div>
         <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
   5 usability test rounds led to clearer hierarchy and smoother
           navigation.      
@@ -39,7 +33,7 @@ const UsabilityIterationsSection: React.FC = () => {
       {/*  subtileAndDescribe*/}
       <div className="max-w-4xl mx-auto">
       <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
  1 – Relocating Size and Frame Options     
   </h2>
@@ -64,7 +58,7 @@ const UsabilityIterationsSection: React.FC = () => {
        {/*  subtileAndDescribe  */}
        <div className="max-w-4xl mx-auto">
       <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
 2-Layout Shift: Vertical Toolbar to Horizontal    </h2>
        
@@ -88,7 +82,7 @@ const UsabilityIterationsSection: React.FC = () => {
         {/*  subtileAndDescribe  */}
         <div className="max-w-4xl mx-auto">
       <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
 3-Add Gallery Wall Suggestions    </h2>
        
@@ -111,7 +105,7 @@ const UsabilityIterationsSection: React.FC = () => {
         {/* subtileAndDescribe */}
         <div className="max-w-4xl mx-auto">
       <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
 Web App Iteration: Needs to be Visually Appealing     </h2>
        
@@ -141,7 +135,7 @@ Web App Iteration: Needs to be Visually Appealing     </h2>
           
         </div>
         <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
   Design decisions become far more meaningful when grounded in real user context, not just abstract assumptions.  
   </h2>

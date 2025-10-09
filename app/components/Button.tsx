@@ -1,12 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 type ButtonProps = {
   text: string;
   href?: string;
   onClick?: () => void;
-  variant?: "primary" | "outline"; // typeButton
+  variant?: "primary" | "outline";
   newTab?: boolean;
 };
 
@@ -18,7 +16,7 @@ export default function Button({
   newTab = false,
 }: ButtonProps) {
   const baseStyle =
-    "inline-block rounded-full px-8 py-3 text-sm font-medium transition-colors duration-300";
+    "inline-block rounded-full px-8 py-3 text-sm font-medium transition-all duration-300 active:scale-95";
 
   const primaryStyle =
     "bg-[#00636b] text-white hover:bg-[#004f54] border border-transparent";
@@ -30,25 +28,22 @@ export default function Button({
     variant === "primary" ? primaryStyle : outlineStyle
   }`;
 
-  const content = (
-    <motion.button whileTap={{ scale: 0.97 }} className={combined} onClick={onClick}>
-      {text}
-    </motion.button>
-  );
-
   if (href) {
     return (
-      <motion.a
-        whileTap={{ scale: 0.97 }}
+      <a
         href={href}
         target={newTab ? "_blank" : "_self"}
         rel={newTab ? "noopener noreferrer" : ""}
         className={combined}
       >
         {text}
-      </motion.a>
+      </a>
     );
   }
 
-  return content;
+  return (
+    <button className={combined} onClick={onClick}>
+      {text}
+    </button>
+  );
 }

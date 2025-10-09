@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fraunces } from "next/font/google";
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const SolutionArchitectureSection: React.FC = () => {
   return (
@@ -21,7 +16,7 @@ const SolutionArchitectureSection: React.FC = () => {
         
         </div>
         <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className= "font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
  Creating a confident and personalized experience through visual
           context and smart guidance.        
@@ -46,7 +41,7 @@ const SolutionArchitectureSection: React.FC = () => {
          
         </div>
         <h2
-            className={`${fraunces.className} text-[42px] font-normal text-[#1A1A1A] leading-snug`}
+            className="font-fraunces text-[42px] font-normal text-[#1A1A1A] leading-snug"
           >
  Designing a minimal and focused flow for confident art selection.
   </h2>
