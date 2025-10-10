@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import React from "react";
-import ProcessSection from "@/app/components/ProcessSection";
-import MarketAnalysisSection from "@/app/components/MarketAnalysisSection";
-import ValidationSection from "@/app/components/ValidationSection";
-import PainPointsSection from "@/app/components/PainPointsSection";
-import PersonaSection from "@/app/components/PersonaSection";
-import SolutionArchitectureSection from "@/app/components/SolutionArchitectureSection";
-import UsabilityIterationsSection from "@/app/components/UsabilityIterationsSection";
+import ProcessSection from "@/app/components/Artella/ProcessSection";
+import MarketAnalysisSection from "@/app/components/Artella/MarketAnalysisSection";
+import ValidationSection from "@/app/components/Artella/ValidationSection";
+import PainPointsSection from "@/app/components/Artella/PainPointsSection";
+import PersonaSection from "@/app/components/Artella/PersonaSection";
+import SolutionArchitectureSection from "@/app/components/Artella/SolutionArchitectureSection";
+import UsabilityIterationsSection from "@/app/components/Artella/UsabilityIterationsSection";
 import MoreProjects from "@/app/components/MoreProjects";
 
 export default function ArtellaPage() {

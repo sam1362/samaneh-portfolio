@@ -1,6 +1,6 @@
 "use client";
 
-import Projects from "../components/Projects";
+import Projects from "../components/HomePage/Projects";
 
 export default function WorkPage() {
   return (

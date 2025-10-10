@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/Footer";
+
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -21,7 +20,7 @@ export default function ContactPage() {
 
   return (
     <main className="bg-white text-[#1A1A1A] min-h-screen flex flex-col">
-      <NavigationBar />
+     
 
       {/* Contact Section */}
       <section className="flex-grow flex flex-col items-center justify-center px-6 md:px-16 py-20">
@@ -97,7 +96,7 @@ export default function ContactPage() {
         </form>
       </section>
 
-      <Footer />
+      
     </main>
   );
 }

@@ -3,9 +3,9 @@
 "use client";
 
 
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import About from "./components/About"; 
+import Hero from "./components/HomePage/Hero";
+import Projects from "./components/HomePage/Projects";
+import About from "./components/HomePage/About"; 
 
 
 export default function Home() {

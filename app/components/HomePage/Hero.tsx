@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import profilePic from "../../public/Samaneh.png";
 import Button from "./Button";
 
 export default function Hero() {
@@ -36,7 +35,7 @@ export default function Hero() {
       {/* Right Side (Image) */}
       <div className="flex-1 flex justify-center mt-12 md:mt-0">
         <Image
-          src={profilePic}
+          src="/Samaneh.png" 
           alt="Samaneh Profile"
           width={340}
           height={340}

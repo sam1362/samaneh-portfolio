@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Button from "./Button";
+import AboutStats from "./AboutStats"; // 👈 اضافه شده
 
 export default function About() {
   return (
@@ -29,21 +29,15 @@ export default function About() {
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 mt-6">
-          <Button text="LinkedIn" href="https://linkedin.com" variant="primary" newTab />
-          <Button text="CV" href="/resume.pdf" newTab />
-          <Button text="GitHub" href="https://github.com" newTab />
+          <Button text="LinkedIn" href="https://linkedin.com/in/samaneh-mohammadreza" variant="primary" newTab />
+          <Button text="CV" href="/CV.pdf" newTab />
+          <Button text="GitHub" href="https://github.com/sam1362" newTab />
         </div>
       </div>
 
-      {/* Right image */}
+      {/* ✅ Right side: Stats instead of image */}
       <div className="flex-1 flex justify-center">
-        <Image
-          src="/Samaneh.png"
-          alt="Samaneh profile"
-          width={400}
-          height={400}
-          className="rounded-lg object-cover shadow-sm transition-transform duration-500 hover:scale-[1.02]"
-        />
+        <AboutStats />
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 "use client";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
-import About from "../components/About";
+import About from "../components/HomePage/About";
 
 export default function WorkPage() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import MoreProjects from "../components/MoreProjects";
+import MoreProjects from "../MoreProjects";
 
 
 const CupBox: React.FC = () => {
