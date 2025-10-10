@@ -1,20 +1,13 @@
 "use client";
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/Footer";
-import About from "../components/HomePage/About";
 
-export default function WorkPage() {
+import About from "@/app/components/HomePage/About";
+
+export default function AboutPage() {
   return (
-    <main className="bg-white text-[#1A1A1A] min-h-screen flex flex-col">
-      <NavigationBar />
-
-      <section className="flex-grow px-6 md:px-16 py-20 max-w-6xl mx-auto">
-      
-
+    <main className="bg-[#FAFAFA] text-[#1A1A1A] min-h-screen flex justify-center">
+      <div className="w-full max-w-7xl">
         <About />
-      </section>
-
-      <Footer />
+      </div>
     </main>
   );
 }
