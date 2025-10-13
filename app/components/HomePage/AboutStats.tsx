@@ -12,25 +12,26 @@ interface Stat {
 const stats: Stat[] = [
     {
         value: 2,
+        suffix: "+",
         label: "years",
-        subtext: "Master’s in Human–Computer Interaction",
+        subtext: "Frontend Developer (React, Next.js)",
       },
   {
-    value: 4,
+    value: 3,
     suffix: "+",
     label: "years",
-    subtext: "UX / UI Designer",
+    subtext: "UX / UI Designer (Figma, Miro,...)",
   },
   {
     value: 30,
     suffix: "+",
     label: "Projects",
-    subtext: "Web Designer",
+    subtext: "Web Designer (Wordpress and shopify)",
   },
   {
     value: 4,
     label: "years",
-    subtext: "Backend Developer and IT Expert",
+    subtext: "Backend Developer and IT Expert (C#.Net)",
   },
 
 ];
