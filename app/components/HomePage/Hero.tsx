@@ -77,9 +77,9 @@ export default function Hero() {
         </div>
         <div className="bg-white rounded-2xl shadow-sm py-6 sm:py-8 transition hover:shadow-md">
           <h3 className="text-xl sm:text-2xl font-bold text-[#00636b] mb-2">
-            30+ Projects
+            10+ Projects
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base">Completed</p>
+          <p className="text-gray-600 text-sm sm:text-base">UX/UI Design</p>
         </div>
         <div className="bg-white rounded-2xl shadow-sm py-6 sm:py-8 transition hover:shadow-md">
           <h3 className="text-xl sm:text-2xl font-bold text-[#00636b] mb-2">
