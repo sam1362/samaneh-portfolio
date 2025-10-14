@@ -11,7 +11,7 @@ interface Stat {
 
 const stats: Stat[] = [
     {
-        value: 2,
+        value: 3,
         suffix: "+",
         label: "years",
         subtext: "Frontend Developer (React, Next.js)",
