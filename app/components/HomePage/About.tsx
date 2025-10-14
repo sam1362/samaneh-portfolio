@@ -28,9 +28,6 @@ export default function About() {
 
         </p>
 
-        <p className="text-gray-700 leading-relaxed mb-10">
-          My goal is to craft products that are scalable, intuitive, and visually consistent.
-        </p>
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 mt-6">
