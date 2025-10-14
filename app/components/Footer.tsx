@@ -18,10 +18,10 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="w-full flex flex-col md:flex-row justify-between items-center text-sm text-gray-100">
         <a
-          href="mailto:smr82computer@gmail.com"
+          href="mailto:samanehmohammadreza83@gmail.com"
           className="hover:underline underline-offset-4 transition-colors"
         >
-          smr82computer@gmail.com
+          samanehmohammadreza83@gmail.com
         </a>
 
         <p className="mt-4 md:mt-0">© 2025 Samaneh. All Rights Reserved.</p>
