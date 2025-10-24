@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Fraunces } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 
 // Components
@@ -7,20 +7,17 @@ import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
 
 // Fonts
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
   weight: ["400"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -36,14 +33,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} antialiased bg-[#FAFAFA] text-[#1A1A1A]`}
+        className={`
+          ${inter.variable}
+          ${fraunces.variable}
+          antialiased
+          bg-[#FAFAFA]
+          text-[#1A1A1A]
+        `}
       >
-        {/* Navigation globally visible */}
+        {/* Global Navigation */}
         <NavigationBar />
 
         <main className="min-h-screen">{children}</main>
 
-        {/* Footer globally visible */}
+        {/* Global Footer */}
         <Footer />
       </body>
     </html>

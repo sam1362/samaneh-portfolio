@@ -1,30 +1,27 @@
 @import "tailwindcss";
 
+/* ====== Theme Variables ====== */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-@theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ====== Base Styles ====== */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.font-fraunces {
-  font-family: var(--font-fraunces);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
+/* Fraunces utility class for headings */
+.font-fraunces {
+  font-family: var(--font-fraunces), serif;
+}
