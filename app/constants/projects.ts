@@ -17,7 +17,7 @@ export const projects = [
     tags: ["EdTech", "UX/UI", "App"],
     description:
       "A mobile-first MVP that helps students discover, compare, and evaluate U.S. universities through a calm, scannable, and data-driven UX.",
-    image: "/images/School.png",
+    image: "/images/eduusa-thumb.png",
     link: "/project/school",
   },
   {
