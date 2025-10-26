@@ -5,6 +5,7 @@ import MoreProjects from "../MoreProjects";
 const School: React.FC = () => {
   return (
     <main className="bg-white text-[#1A1A1A] min-h-screen px-6 py-24 flex justify-center flex-col items-center">
+      {/* ✅ WRAPPER START */}
       <div className="max-w-3xl w-full space-y-20">
         {/* Introduction */}
         <section>
@@ -36,9 +37,7 @@ const School: React.FC = () => {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4">Team</h3>
-              <p className="text-gray-600 leading-relaxed">
-                2 UX/UI Designers
-              </p>
+              <p className="text-gray-600 leading-relaxed">2 UX/UI Designers</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4">Timeline</h3>
@@ -53,161 +52,222 @@ const School: React.FC = () => {
           <h3 className="text-2xl font-medium mb-4 font-fraunces">
             Students Struggle to Compare Universities Quickly and Confidently.
           </h3>
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed mb-10">
             Students, especially international applicants, struggle to build a
-            short list because information is scattered and interfaces are
-            noisy. They need a clear path from discovery to comparison to taking
-            action (apply or book an appointment).
-          </p>
-        </section>
-      </div>
-
-      {/* User Research */}
-      <section className="bg-[#DBE6FF] px-12 md:px-20 py-20 rounded-3xl mt-20 mx-[-3rem] w-full max-w-6xl">
-        <div className="px-6 md:px-0 max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">User Research</h2>
-          <p className="text-lg leading-relaxed mb-12 text-[#1A1A1A]/80">
-            Through surveys and interviews with international students, we
-            discovered key challenges in the university search and admission
-            journey. Most users felt overwhelmed by scattered information,
-            unclear comparisons, and lack of guidance in finding universities
-            that match their academic and financial profiles. These insights
-            helped us shape EduUSA as a simple, guided, and confident experience
-            for choosing the right university.
+            short list because information is scattered and interfaces are noisy.
+            They need a clear path from discovery to comparison to taking action
+            (apply or book an appointment).
           </p>
 
-          <h3 className="text-2xl font-semibold mb-12">Findings</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-            {/* Finding 1 */}
-            <div className="flex flex-col items-center text-center space-y-5">
-            <div className="w-[220px] h-[220px] bg-[#DBE6FF] flex items-center justify-center rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/scho1.png"
-                  alt="Customizing is inconvenient and manual"
-                  width={220}
-                  height={220}
-                  className="object-contain w-full h-full"
-                />
-              </div>
-              <h4 className="text-lg font-bold">
-                1. Students struggle to find universities that match their
-                goals.
-              </h4>
-              <p className="text-base text-[#1A1A1A]/80 max-w-md">
-                “I don’t know which universities actually fit my grades, budget,
-                or career plans. There are so many sites, and none really guide
-                me clearly.”
-              </p>
-            </div>
-
-            {/* Finding 2 */}
-            <div className="flex flex-col items-center text-center space-y-5">
-              <div className="w-[220px] h-[220px] bg-[#DBE6FF] flex items-center justify-center rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/scho2.png"
-                  alt="Customizing is inconvenient and manual"
-                  width={220}
-                  height={220}
-                  className="object-contain w-full h-full"
-                />
-              </div>
-              <h4 className="text-lg font-bold">
-                2. Comparing options feels confusing and time-consuming.
-              </h4>
-              <p className="text-base text-[#1A1A1A]/80 max-w-md">
-                “Every site shows rankings or random lists, but I can’t easily
-                compare tuition, scholarships, and admission criteria in one
-                place.”
-              </p>
-            </div>
+          {/* Centered Image */}
+          <div className="flex justify-center mt-12">
+            <Image
+              src="/images/problemSchool.png"
+              alt="Students comparing universities on EduUSA"
+              width={800}
+              height={500}
+              className="rounded-2xl object-contain max-w-full"
+            />
           </div>
+        </section>
+        {/* Our Solution */} 
+        <section className="mt-20"> <h2 className="text-2xl font-bold mb-4">Our Solution</h2> 
+        <h3 className="text-2xl font-medium mb-4 font-fraunces"> A Calm, Mobile-First Experience for Fast, Confident 
+        Comparison. </h3> <p className="text-lg leading-relaxed mb-12"> EduUSA introduces a simplified mobile experience
+         that lets users search, filter, and compare universities in just a few steps. Home / Discover: search + quick 
+         filters + scannable cards Compare: select two universities → compact metrics table Accessibility: WCAG AA 
+         contrast, 44px touch targets, focus states The MVP focuses on reducing cognitive load and helping users make 
+         confident choices faster. 
+         </p> 
+         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-12">
+  
+  <div className="flex flex-col items-center">
+    <Image
+      src="/images/Harvard.png"
+      alt="Before design"
+      width={250}
+      height={350}
+      className="object-contain rounded-3xl drop-shadow-md"
+    />
+  </div>
 
-          {/* Insights */}
-          <section className="mt-20">
-            <h3 className="text-2xl font-semibold mb-12">Insights</h3>
+  
+  <div className="flex flex-col items-center">
+    <Image
+      src="/images/comparsion.png"
+      alt="After design"
+      width={250}
+      height={350}
+      className="object-contain rounded-3xl drop-shadow-md "
+    />
+  </div>
+</div>
 
-            <div className="flex flex-col space-y-10">
-              <div className="flex items-start space-x-6">
-                
+         </section>
+
+        {/* User Research */}
+       
+        <section className="bg-[#DBE6FF] px-8 md:px-16 py-16 rounded-3xl mt-20 w-full max-w-none mx-0">
+          <div className="px-6 md:px-0 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">User Research</h2>
+            <p className="text-lg leading-relaxed mb-12 text-[#1A1A1A]/80">
+              Through surveys and interviews with international students, we
+              discovered key challenges in the university search and admission
+              journey. Most users felt overwhelmed by scattered information,
+              unclear comparisons, and lack of guidance in finding universities
+              that match their academic and financial profiles. These insights
+              helped us shape EduUSA as a simple, guided, and confident experience
+              for choosing the right university.
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-12">Findings</h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+              {/* Finding 1 */}
+              <div className="flex flex-col items-center text-center space-y-5">
+                <div className="w-[220px] h-[220px] bg-[#DBE6FF] flex items-center justify-center rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/scho1.png"
+                    alt="Finding 1"
+                    width={220}
+                    height={220}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+                <h4 className="text-lg font-bold">
+                  1. Students struggle to find universities that match their goals.
+                </h4>
+                <p className="text-base text-[#1A1A1A]/80 max-w-md">
+                  “I don’t know which universities actually fit my grades, budget,
+                  or career plans. There are so many sites, and none really guide
+                  me clearly.”
+                </p>
+              </div>
+
+              {/* Finding 2 */}
+              <div className="flex flex-col items-center text-center space-y-5">
+                <div className="w-[220px] h-[220px] bg-[#DBE6FF] flex items-center justify-center rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/scho2.png"
+                    alt="Finding 2"
+                    width={220}
+                    height={220}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+                <h4 className="text-lg font-bold">
+                  2. Comparing options feels confusing and time-consuming.
+                </h4>
+                <p className="text-base text-[#1A1A1A]/80 max-w-md">
+                  “Every site shows rankings or random lists, but I can’t easily
+                  compare tuition, scholarships, and admission criteria in one
+                  place.”
+                </p>
+              </div>
+            </div>
+
+            {/* Insights */}
+            <div className="mt-20">
+              <h3 className="text-2xl font-semibold mb-12">Insights</h3>
+              <div className="flex flex-col space-y-10">
                 <p className="text-lg leading-relaxed text-[#1A1A1A]/90">
                   Lack of centralised, guided information makes the decision
                   process overwhelming, reducing user trust and engagement.
                 </p>
-              </div>
-
-              <div className="flex items-start space-x-6">
-                
                 <p className="text-lg leading-relaxed text-[#1A1A1A]/90">
                   Complex comparisons slow users down and increase dropout rates;
                   simplifying key metrics on cards and tables builds clarity.
                 </p>
               </div>
             </div>
-          </section>
-        </div>
-      </section>
-        {/* HighFidelity */}
-      <div className="max-w-3xl w-full space-y-20">
+          </div>
+        </section>
+        {/* Usability Testing */}
+<section className="mt-20">
+  <h2 className="text-2xl font-bold mb-4">Usability Testing</h2>
+  <p className="text-lg leading-relaxed mb-10">
+    During usability testing, we observed that users often tried to access the Learning section directly 
+    from the bottom navigation rather than through the Menu. 
+    Based on this insight, we replaced the Profile tab with a direct Learning shortcut, 
+    improving accessibility and making educational content easier to discover.
+  </p>
+
+  {/* Usability Test Image */}
+  <div className="flex justify-center mt-10">
+    <Image
+      src="/images/usabilityTestEdu.png"
+      alt="Usability test results for EduUSA navigation redesign"
+      width={800}
+      height={500}
+      className="rounded-2xl object-contain max-w-full drop-shadow-md"
+    />
+  </div>
+</section>
+
+
+        {/* High Fidelity */}
         <section className="mt-20">
-          <h2 className="text-2xl font-bold mb-4">High Fidility</h2>
+          <h2 className="text-2xl font-bold mb-4">High Fidelity</h2>
           <p className="text-lg leading-relaxed mb-12">
-          University Details | Guest Profile
+            University Details | Learning
           </p>
         </section>
-      </div>
-      {/* Three centered images */}
-<section className="flex flex-col md:flex-row justify-center items-center gap-10 mt-20">
-  <div className="flex justify-center">
+
+       {/* Three centered images */}
+<section className="flex flex-col md:flex-row justify-center items-start md:items-center gap-10 md:gap-14 mt-20">
+  <div className="flex justify-center md:justify-start">
     <Image
       src="/images/Harvard.png"
       alt="Harvard screen"
       width={320}
       height={640}
-      className="object-contain "
+      className="object-contain rounded-3xl drop-shadow-xl"
     />
   </div>
-  <div className="flex justify-center">
+  <div className="flex justify-center md:justify-start">
     <Image
       src="/images/continueHarvard.png"
-      alt="Continue Harvard screen"
+      alt="Continue Harvard"
       width={320}
       height={640}
-      className="object-contain "
+      className="object-contain rounded-3xl drop-shadow-xl"
     />
   </div>
-  <div className="flex justify-center">
+  <div className="flex justify-center md:justify-start">
     <Image
-      src="/images/profile.png"
-      alt="Profile screen"
+      src="/images/learning.png"
+      alt="Learning screen"
       width={320}
       height={640}
-      className="object-contain "
+      className="object-contain rounded-3xl drop-shadow-xl"
     />
   </div>
 </section>
-      {/* Takeaway */}
-      <div className="max-w-3xl w-full space-y-20">
+
+
+        {/* Impact */}
         <section className="mt-20">
           <h2 className="text-2xl font-bold mb-4">Impact (Early Signals)</h2>
           <p className="text-lg leading-relaxed mb-12">
-          The initial release showed a noticeable increase in engagement with university cards and detail buttons (example: +X%).
-During internal testing, the average navigation time to the comparison table dropped to under Y seconds — a promising indicator 
-of improved efficiency.(Metrics will be updated after external validation.)
+            The initial release showed a noticeable increase in engagement with university cards and detail buttons (example: +X%).
+            During internal testing, the average navigation time to the comparison table dropped to under Y seconds, a promising
+            indicator of improved efficiency. (Metrics will be updated after external validation.)
           </p>
         </section>
-      </div>
-      <div className="max-w-3xl w-full space-y-20">
+
+        {/* Learnings & Next Steps */}
         <section className="mt-20">
           <h2 className="text-2xl font-bold mb-4">Learnings & Next Steps</h2>
           <p className="text-lg leading-relaxed mb-12">
-          Minimal cards and a clear comparison table reduce cognitive load, helping users make faster decisions.
-A guest-first approach lowers entry barriers, while transparent value messaging encourages account creation.
-Next steps include connecting to real university data, enabling preference storage, and running A/B tests to refine CTA clarity.
+            Minimal cards and a clear comparison table reduce cognitive load, helping users make faster decisions.
+            A guest-first approach lowers entry barriers, while transparent value messaging encourages account creation.
+            Next steps include connecting to real university data, enabling preference storage, and running A/B tests to refine CTA clarity.
           </p>
         </section>
-      </div>
-      <MoreProjects current="/project/school" />
+
+        {/* More Projects */}
+        <MoreProjects current="/project/school" />
+      </div> {/* ✅ close wrapper */}
     </main>
   );
 };
