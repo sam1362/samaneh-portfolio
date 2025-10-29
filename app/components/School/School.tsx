@@ -74,10 +74,9 @@ const School: React.FC = () => {
         <section className="mt-20"> <h2 className="text-2xl font-bold mb-4">Our Solution</h2> 
         <h3 className="text-2xl font-medium mb-4 font-fraunces"> A Calm, Mobile-First Experience for Fast, Confident 
         Comparison. </h3> <p className="text-lg leading-relaxed mb-12"> EduUSA introduces a simplified mobile experience
-         that lets users search, filter, and compare universities in just a few steps. Home / Discover: search + quick 
-         filters + scannable cards Compare: select two universities → compact metrics table Accessibility: WCAG AA 
-         contrast, 44px touch targets, focus states The MVP focuses on reducing cognitive load and helping users make 
-         confident choices faster. 
+         that lets users search, filter, and compare universities in just a few steps. In addition to providing university information and application guidance, EduUSA also includes virtual campus tours.
+This feature allows users to explore universities visually and compare them directly in the app, without needing to search on Google or visit multiple websites.
+It creates a more engaging and informed decision-making experience for prospective students.
          </p> 
          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-12">
   
